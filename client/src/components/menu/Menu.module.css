@@ -1,0 +1,23 @@
+.MenuItems  {
+    margin-left: 1rem;
+    color: rgb(220, 220, 230);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+   
+}
+
+.MenuItems ul li {
+    float: left;
+    margin: 0.7rem;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    font-size: 17px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    border-bottom:  1px solid rgba(255, 255, 255, 0); 
+}
+.MenuItems ul li:hover{
+   color: white;
+   border-bottom:  1px solid white; 
+}
