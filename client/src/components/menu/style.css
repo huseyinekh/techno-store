@@ -1,0 +1,4 @@
+.paths a.active{
+   color: white !important;
+   border-bottom:  1px solid white; 
+}

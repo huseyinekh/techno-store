@@ -1,23 +1,54 @@
-.MenuItems  {
-    margin-left: 1rem;
-    color: rgb(220, 220, 230);
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: row;
-   
+.MenuItems {
+  margin-left: 1rem;
+  margin-top: 0.5rem;
+  color: rgb(220, 220, 230);
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  flex-direction: column;
+}
+
+
+.Menu_icon {
+  transition: all 0.3s ease;
+  display: none;
+}
+.Menu_icon:hover {
+  color: white;
 }
 
 .MenuItems ul li {
-    float: left;
-    margin: 0.7rem;
-    cursor: pointer;
-    transition: all 0.3s ease;
-    font-size: 17px;
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    border-bottom:  1px solid rgba(255, 255, 255, 0); 
+  float: left;
+  margin: 0.7rem;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  font-size: 17px;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
 }
-.MenuItems ul li:hover{
-   color: white;
-   border-bottom:  1px solid white; 
+
+.MenuItems ul li a {
+  transition: all 0.3s ease;
+  color: rgba(245, 245, 245, 0.849);
+  border-bottom: 1px solid rgba(255, 255, 255, 0);
+}
+.MenuItems a:hover,
+.MenuItems a:active,
+.MenuItems a.active {
+  color: white !important;
+  border-bottom: 1px solid white;
+}
+@media screen and (max-width: 830px) {
+  .Menu_icon {
+    display: block;
+  }
+  .MenuItems ul li{
+       float: none;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .Logo h1 {
+    color: white;
+    font-size: 20px;
+  }
 }

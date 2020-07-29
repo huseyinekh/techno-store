@@ -1,0 +1,33 @@
+.rounded_button {
+  padding: 0px 0px;
+  cursor: pointer;
+  transition: all 0.4s ease;
+  font-size: 17px;
+  border-radius: 25px;
+  margin: 1px 1px;
+  border: 1px solid rgba(5, 5, 184, 0);
+  background-color: white;
+  color: rgb(5, 5, 184);
+  font-size: 24px;
+  
+  
+}
+
+.rounded_button:hover {
+  /* background: red; */
+  color: red;
+  animation: animationRb 4s linear  infinite  alternate;
+}
+
+@keyframes animationRb {
+  0% {
+    font-size: 24px;
+    
+  }
+  50% {
+    font-size: 30px;
+  }
+  100% {
+    font-size: 24px;
+  }
+}
