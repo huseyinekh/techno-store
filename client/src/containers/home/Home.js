@@ -6,8 +6,6 @@ import CategoryMenu from "../../components/menu/categoryMenu/menu";
 
 const Home = () => {
   useEffect(() => {
-    
-    
     window.addEventListener("scroll", (e) => {
       myFunction(document.documentElement.scrollTop);
     });
@@ -15,15 +13,11 @@ const Home = () => {
     var sticky = header.offsetTop;
 
     function myFunction(scrollTop) {
-      console.log( document.documentElement.clientHeight,
-        document.body.scrollHeight,
-        document.documentElement.scrollHeight,
-        document.body.offsetHeight,
-        document.documentElement.offsetHeight )
-        ;
-        let productCount=document.body.offsetHeight-800
-        console.log(productCount,scrollTop)
-      if (scrollTop > 500 & scrollTop<productCount) header.style.marginTop = `${scrollTop - 400}px`;
+
+      let productCount = document.body.offsetHeight - 800;
+  
+      if ((scrollTop > 500) & (scrollTop < productCount))
+        header.style.marginTop = `${scrollTop - 400}px`;
     }
   });
 
@@ -49,23 +43,27 @@ const Home = () => {
           <div className="most_popular product">
             <h1 className="product_sale_title">Önə çıxanlar</h1>
             <ProductItem
+              id={1}
               price="35$"
               detail="Lorem inpsun lorem sitea"
               src="hp.png"
             />
             <ProductItem
+              id={2}
               price="35$"
               isNew
               detail="Lorem inpsun lorem sitea"
               src="hp2.png"
             />
             <ProductItem
+              id={3}
               price="35$"
               isBestSeller
               detail="Lorem inpsun lorem sitea"
               src="hp3.png"
             />
             <ProductItem
+              id={4}
               price="35$"
               isNew
               detail="Lorem inpsun lorem sitea"
@@ -76,69 +74,81 @@ const Home = () => {
           <div className="most_popular product">
             <h1 className="product_sale_title">Trend mallar</h1>
             <ProductItem
+              id={11}
               price="35$"
               detail="Lorem inpsun lorem sitea"
               src="hp.png"
             />
             <ProductItem
+              id={12}
               price="35$"
               isNew
               detail="Lorem inpsun lorem sitea"
               src="hp2.png"
             />
             <ProductItem
+              id={13}
               price="35$"
               isBestSeller
               detail="Lorem inpsun lorem sitea"
               src="hp3.png"
             />
             <ProductItem
+              id={14}
               price="35$"
               isNew
               detail="Lorem inpsun lorem sitea"
               src="hp4.png"
             />
-              <ProductItem
+            <ProductItem
+              id={15}
               price="35$"
               detail="Lorem inpsun lorem sitea"
               src="hp.png"
             />
             <ProductItem
+             id={16}
               price="35$"
               isNew
               detail="Lorem inpsun lorem sitea"
               src="hp2.png"
             />
             <ProductItem
+              id={24}
               price="35$"
               isBestSeller
               detail="Lorem inpsun lorem sitea"
               src="hp3.png"
             />
             <ProductItem
+              id={53}
               price="35$"
               isNew
               detail="Lorem inpsun lorem sitea"
               src="hp4.png"
             />
-              <ProductItem
+            <ProductItem
+              id={44}
               price="35$"
               detail="Lorem inpsun lorem sitea"
               src="hp.png"
             />
             <ProductItem
+              id={3}
               price="35$"
               isNew
               detail="Lorem inpsun lorem sitea"
               src="hp2.png"
             />
             <ProductItem
+              id={26}
               price="35$"
               isBestSeller
               detail="Lorem inpsun lorem sitea"
               src="hp3.png"
             />
             <ProductItem
+              id={1}
               price="35$"
               isNew
               detail="Lorem inpsun lorem sitea"
